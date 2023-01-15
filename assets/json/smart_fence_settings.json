@@ -1,0 +1,82 @@
+[
+  {
+    "id": 24,
+    "familyId": 180,
+    "racIds": [
+      100
+    ],
+    "geofenceSettings": {
+      "longitude": 139.762174,
+      "latitude": 35.653739,
+      "arrivingRadius": 5000,
+      "leavingRadius": 1000
+    },
+    "associatedUsers": [
+      185
+    ],
+    "racSettings": {
+      "racParametersForArriving": {
+        "temperature": 25.0,
+        "mode": "COOLING",
+        "powerMode": "ON",
+        "humidity": 0,
+        "relativeTemperature": 0.0,
+        "fanSpeed": null,
+        "fanSwing": null
+      },
+      "racParametersForLeaving": {
+        "temperature": 25.0,
+        "mode": "COOLING",
+        "powerMode": "OFF",
+        "humidity": 0,
+        "relativeTemperature": 0.0,
+        "fanSpeed": null,
+        "fanSwing": null
+      },
+      "arrivingToggleOn": true,
+      "leavingToggleOn": true
+    },
+    "createdAt": "2020-11-10T04:05:26",
+    "lastModifiedAt": "2020-11-10T04:05:26"
+  },
+  {
+    "id": 24,
+    "familyId": 181,
+    "racIds": [
+      100
+    ],
+    "geofenceSettings": {
+      "longitude": 139.762174,
+      "latitude": 35.653739,
+      "arrivingRadius": 5000,
+      "leavingRadius": 1000
+    },
+    "associatedUsers": [
+      185
+    ],
+    "racSettings": {
+      "racParametersForArriving": {
+        "temperature": 25.0,
+        "mode": "COOLING",
+        "powerMode": "ON",
+        "humidity": 0,
+        "relativeTemperature": 0.0,
+        "fanSpeed": null,
+        "fanSwing": null
+      },
+      "racParametersForLeaving": {
+        "temperature": 25.0,
+        "mode": "COOLING",
+        "powerMode": "OFF",
+        "humidity": 0,
+        "relativeTemperature": 0.0,
+        "fanSpeed": null,
+        "fanSwing": null
+      },
+      "arrivingToggleOn": true,
+      "leavingToggleOn": true
+    },
+    "createdAt": "2020-11-10T04:05:26",
+    "lastModifiedAt": "2020-11-10T04:05:26"
+  }
+]

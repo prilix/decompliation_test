@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:tag="layout/manage_users_frame_0" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/outer_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_marginTop="@dimen/dp_16" android:layout_weight="0.1" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jch.racWiFi.customViews.customWidgets.ImageButton android:id="@id/image_button_menu" android:layout_width="@dimen/dp_0" android:layout_height="@dimen/dp_0" android:layout_marginStart="@dimen/dp_8" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline158" app:layout_constraintStart_toEndOf="@id/guideline158" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ImageButton_Menu" />
+            <com.jch.racWiFi.customViews.customWidgets.TextView android:ellipsize="end" android:gravity="center" android:id="@id/text_view_manage_users" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:maxLines="2" android:layout_marginStart="@dimen/dp_8" android:layout_marginEnd="@dimen/dp_8" app:fontName="@string/font_sanpro_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline159" app:layout_constraintStart_toEndOf="@id/guideline158" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Manange_Users" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline158" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="@dimen/guideLineLeftButton" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline159" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="@dimen/guideLineRightButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="0.9" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/layout1">
+        <include android:id="@id/included_layout" layout="@layout/manage_users_vd" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/alexa_nav_graph" app:startDestination="@id/alexaLinkFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="LinkWithAlexaFragment" android:name="com.jch.racWiFi.linking.amazon.fragment.AlexaLinkFragment" android:id="@id/alexaLinkFragment" />
+    <fragment android:label="LinkedWithAlexaFragment" android:name="com.jch.racWiFi.linking.amazon.fragment.AlexaLinkedFragment" android:id="@id/alexaLinkedFragment" />
+</navigation>

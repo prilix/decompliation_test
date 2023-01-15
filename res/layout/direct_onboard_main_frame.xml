@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/direct_onboard_main_frame_0" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/outer_layout" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="0.08">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jch.racWiFi.customViews.customWidgets.ImageButton android:id="@id/image_button_menu" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/direct_onboard" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/ImageButton_Menu" />
+            <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/direct_onboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Direct_Onboard_Title" />
+            <com.jch.racWiFi.customViews.customWidgets.ImageButton android:id="@id/image_button_copy_weekly_timer" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginEnd="30.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintTop_toTopOf="parent" style="@style/ImageButton_Copy_Weekly_Timer" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:tag="binding_1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.92">
+        <include android:id="@id/include" layout="@layout/direct_onboard_main_vd" />
+    </LinearLayout>
+</LinearLayout>

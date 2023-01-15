@@ -1,0 +1,77 @@
+{
+  "notificationType": "ON_CONNECT",
+  "data": [
+    {
+      "serialNumber": "XXXX-XXXX-XXXX",
+      "iduFrostWashStatus": {
+        "active": false,
+        "priority": 8,
+        "lastUpdatedAt": 0
+      },
+      "model": "HITACHI",
+      "id": 37,
+      "cloudId": "3_JP-Premium",
+      "vendorThingId": "JCH-8860038a",
+      "name": "Living",
+      "roomTemperature": 25.0,
+      "mode": "COOLING",
+      "iduTemperature": 25.0,
+      "humidity": 50,
+      "power": "ON",
+      "relativeTemperature": 0.0,
+      "fanSpeed": "AUTO",
+      "fanSwing": "OFF",
+      "updatedAt": 1594885528267,
+      "specialOperationStatus": {
+        "active": false,
+        "priority": 7,
+        "lastUpdatedAt": 1591361019606
+      },
+      "errorStatus": {
+        "active": false,
+        "priority": 4,
+        "lastUpdatedAt": 1593428835145
+      },
+      "lastOnlineUpdatedAt": 1593427650019,
+      "scheduletype": "SCHEDULE_DISABLED",
+      "modelTypeId": 3,
+      "online": true
+    },
+    {
+      "serialNumber": "XXXX-XXXX-XXXX",
+      "iduFrostWashStatus": {
+        "active": false,
+        "priority": 8,
+        "lastUpdatedAt": 0
+      },
+      "model": "HITACHI",
+      "id": 38,
+      "cloudId": "157_India_2020_mass",
+      "vendorThingId": "JCH-8860038b",
+      "name": "Dining",
+      "roomTemperature": 25.0,
+      "mode": "COOLING",
+      "iduTemperature": 25.0,
+      "humidity": 50,
+      "power": "ON",
+      "relativeTemperature": 0.0,
+      "fanSpeed": "AUTO",
+      "fanSwing": "OFF",
+      "updatedAt": 1594885528267,
+      "specialOperationStatus": {
+        "active": false,
+        "priority": 7,
+        "lastUpdatedAt": 1591361019606
+      },
+      "errorStatus": {
+        "active": false,
+        "priority": 4,
+        "lastUpdatedAt": 1593428835145
+      },
+      "lastOnlineUpdatedAt": 1593427650019,
+      "scheduletype": "SCHEDULE_DISABLED",
+      "modelTypeId": 3,
+      "online": true
+    }
+  ]
+}

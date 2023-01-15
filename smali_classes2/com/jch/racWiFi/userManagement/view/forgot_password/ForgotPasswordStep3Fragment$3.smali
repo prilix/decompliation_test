@@ -1,0 +1,134 @@
+.class Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;
+.super Ljava/lang/Object;
+.source "ForgotPasswordStep3Fragment.java"
+
+# interfaces
+.implements Landroid/text/TextWatcher;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;)V
+    .locals 0
+
+    .line 259
+    iput-object p1, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public afterTextChanged(Landroid/text/Editable;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public beforeTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public onTextChanged(Ljava/lang/CharSequence;III)V
+    .locals 0
+
+    .line 268
+    iget-object p1, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p1, p1, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->mNewPassword:Lcom/jch/racWiFi/customViews/customWidgets/EditText;
+
+    invoke-virtual {p1}, Lcom/jch/racWiFi/customViews/customWidgets/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 269
+    iget-object p2, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p2, p2, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->mNewConfirmPassword:Lcom/jch/racWiFi/customViews/customWidgets/EditText;
+
+    invoke-virtual {p2}, Lcom/jch/racWiFi/customViews/customWidgets/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 271
+    iget-object p3, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p3, p3, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->currentPasswordStrength:Lcom/jch/racWiFi/Utils/ValidationUtils$PasswordStrength;
+
+    if-eqz p3, :cond_0
+
+    iget-object p3, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p3, p3, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->currentPasswordStrength:Lcom/jch/racWiFi/Utils/ValidationUtils$PasswordStrength;
+
+    .line 272
+    invoke-virtual {p3}, Lcom/jch/racWiFi/Utils/ValidationUtils$PasswordStrength;->isStrongEnough()Z
+
+    move-result p3
+
+    if-eqz p3, :cond_0
+
+    .line 273
+    invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 274
+    invoke-virtual {p2}, Ljava/lang/String;->isEmpty()Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    .line 275
+    iget-object p1, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p1, p1, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->mResetPasswordButton:Lcom/jch/racWiFi/customViews/customWidgets/Button;
+
+    const/4 p2, 0x1
+
+    invoke-virtual {p1, p2}, Lcom/jch/racWiFi/customViews/customWidgets/Button;->setEnabled(Z)V
+
+    goto :goto_0
+
+    .line 277
+    :cond_0
+    iget-object p1, p0, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment$3;->this$0:Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;
+
+    iget-object p1, p1, Lcom/jch/racWiFi/userManagement/view/forgot_password/ForgotPasswordStep3Fragment;->mResetPasswordButton:Lcom/jch/racWiFi/customViews/customWidgets/Button;
+
+    const/4 p2, 0x0
+
+    invoke-virtual {p1, p2}, Lcom/jch/racWiFi/customViews/customWidgets/Button;->setEnabled(Z)V
+
+    :goto_0
+    return-void
+.end method

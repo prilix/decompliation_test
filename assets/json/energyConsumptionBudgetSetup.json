@@ -1,0 +1,8 @@
+{
+  "familyId": 180,
+  "billingStructureType": "FLAT_RATE",
+  "currency": "USD",
+  "budget": 100,
+  "monthlyBudget": true,
+  "flateUnitPrice": 6
+}

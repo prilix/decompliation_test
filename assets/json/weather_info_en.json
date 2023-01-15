@@ -1,0 +1,31 @@
+{
+  "message":"Weather Data for User location",
+  "result":{
+    "mainParameters":{
+      "temperature":25.0,
+      "pressure":997,
+      "humidity":34,
+      "minimumTemperature":20.0,
+      "maximumTemperature":30.0,
+      "seaLevelPressure":997,
+      "groundLevelPressure":981,
+      "feelsLike":37.72
+    },
+    "weather":[
+      {
+        "id":"802",
+        "main":"Clouds",
+        "description":"scattered clouds",
+        "icon":"03d"
+      }
+    ],
+    "coordinate":{
+      "longitude":"73.54",
+      "latitude":"23.38"
+    },
+    "cityName":"Minato-ku",
+    "cityId":0,
+    "cod":"200",
+    "date":"2020-06-22T11:39:04.000+0000"
+  }
+}

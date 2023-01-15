@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jch.racWiFi.customViews.customWidgets.TextView android:textSize="@dimen/nineteen_sp" android:textColor="@color/rac_name_oofline_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@color/white" android:paddingTop="@dimen/eight_dp" android:paddingBottom="@dimen/eight_dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dash_dash" android:paddingStart="@dimen/sixteen_dp" android:paddingEnd="@dimen/sixteen_dp" android:layout_marginStart="@dimen/sixteen_dp" app:fontName="@string/font_sanpro_regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

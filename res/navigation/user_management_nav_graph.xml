@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/user_management_nav_graph" app:startDestination="@id/splashFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="SplashFragment" android:name="com.jch.racWiFi.userManagement.view.viewImpl.SplashFragment" android:id="@id/splashFragment">
+        <action android:id="@id/action_splashFragment_to_loginFragment" app:destination="@id/loginFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/splashFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_splashFragment_to_sign_up_nav_graph" app:destination="@id/sign_up_nav_graph" />
+    </fragment>
+    <fragment android:label="LoginFragment" android:name="com.jch.racWiFi.userManagement.view.viewImpl.LoginFragment" android:id="@id/loginFragment">
+        <action android:id="@id/action_loginFragment_to_sign_up_nav_graph" app:destination="@id/sign_up_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_loginFragment_to_forgot_password_nav_graph" app:destination="@id/forgot_password_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_loginFragment_to_account_activation_nav_graph" app:destination="@id/account_activation_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <navigation android:id="@id/sign_up_nav_graph" app:startDestination="@id/enterNameCreateAccountSignUp1">
+        <fragment android:label="user_registration1" android:name="com.jch.racWiFi.userManagement.view.SignUpFlow.CreateAccountStep1Fragment" android:id="@id/enterNameCreateAccountSignUp1">
+            <action android:id="@id/action_enterNameCreateAccountSignUp1_to_createAccountManualEntrySignUp2" app:destination="@id/createAccountManualEntrySignUp2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="user_registraion2" android:name="com.jch.racWiFi.userManagement.view.SignUpFlow.CreateAccountStep2Fragment" android:id="@id/createAccountManualEntrySignUp2">
+            <action android:id="@id/action_createAccountManualEntrySignUp2_to_createAccountOtpVerificationSignUp3" app:destination="@id/createAccountOtpVerificationSignUp3" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_createAccountManualEntrySignUp2_to_accountCreationSuccessSignUp52" app:destination="@id/accountCreationSuccessSignUp5" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="user_registration3" android:name="com.jch.racWiFi.userManagement.view.SignUpFlow.CreateAccountStep3Fragment" android:id="@id/createAccountOtpVerificationSignUp3">
+            <action android:id="@id/action_createAccountOtpVerificationSignUp3_to_enterAddressSignUp4" app:destination="@id/enterAddressSignUp4" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_createAccountOtpVerificationSignUp3_to_accountCreationSuccessSignUp5" app:destination="@id/accountCreationSuccessSignUp5" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="user_registration4" android:name="com.jch.racWiFi.userManagement.view.SignUpFlow.CreateAccountStep4Fragment" android:id="@id/enterAddressSignUp4">
+            <action android:id="@id/action_enterAddressSignUp4_to_accountCreationSuccessSignUp5" app:destination="@id/accountCreationSuccessSignUp5" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="user_registration5" android:name="com.jch.racWiFi.userManagement.view.SignUpFlow.CreateAccountStep5SuccessFragment" android:id="@id/accountCreationSuccessSignUp5" />
+        <action android:id="@id/action_global_loginFragment" app:destination="@id/loginFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/sign_up_nav_graph" app:popUpToInclusive="true" />
+    </navigation>
+    <navigation android:id="@id/forgot_password_nav_graph" app:startDestination="@id/forgot_password_step1">
+        <fragment android:label="forgot_password_step1" android:name="com.jch.racWiFi.userManagement.view.forgot_password.ForgotPasswordStep1Fragment" android:id="@id/forgot_password_step1">
+            <action android:id="@id/action_forgot_password_step1_to_forgot_password_step2" app:destination="@id/forgot_password_step2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="forgot_password_step1" android:name="com.jch.racWiFi.userManagement.view.forgot_password.ForgotPasswordStep2Fragment" android:id="@id/forgot_password_step2">
+            <action android:id="@id/action_forgot_password_step2_to_forgot_password_step3" app:destination="@id/forgot_password_step3" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/forgot_password_step2" app:popUpToInclusive="true" />
+        </fragment>
+        <fragment android:label="forgot_password_step1" android:name="com.jch.racWiFi.userManagement.view.forgot_password.ForgotPasswordStep3Fragment" android:id="@id/forgot_password_step3">
+            <action android:id="@id/action_forgot_password_step3_to_forgot_password_step4" app:destination="@id/forgot_password_step4" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="forgot_password_step1" android:name="com.jch.racWiFi.userManagement.view.forgot_password.ForgotPasswordResetSuccessFragment" android:id="@id/forgot_password_step4" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_global_loginFragment2" app:destination="@id/loginFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/forgot_password_nav_graph" app:popUpToInclusive="true" />
+    </navigation>
+    <navigation android:id="@id/account_activation_nav_graph" app:startDestination="@id/account_activation_step1">
+        <fragment android:label="account_activation_step1" android:name="com.jch.racWiFi.userManagement.view.activate_user.InitiateAccountActivationStep1Fragment" android:id="@id/account_activation_step1">
+            <action android:id="@id/action_account_activation_step1_to_account_activation_step2" app:destination="@id/account_activation_step2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="account_activation_step2" android:name="com.jch.racWiFi.userManagement.view.activate_user.InitiateAccountActivationStep2fragment" android:id="@id/account_activation_step2">
+            <action android:id="@id/action_account_activation_step2_to_account_activation_success" app:destination="@id/account_activation_success" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="account_activation_success" android:name="com.jch.racWiFi.userManagement.view.activate_user.AccountActivatedSuccessFragment" android:id="@id/account_activation_success" />
+        <action android:id="@id/action_global_loginFragment3" app:destination="@id/loginFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </navigation>
+</navigation>

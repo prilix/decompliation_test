@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_ec_select_ac_0" android:background="@android:color/white" android:paddingTop="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/includeToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar_energy_consumption" />
+    <include android:id="@id/layoutRacList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/includeToolbar" layout="@layout/layout_rac_list" />
+    <include android:id="@id/layoutEcNoData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/includeToolbar" layout="@layout/layout_ec_no_data" />
+</androidx.constraintlayout.widget.ConstraintLayout>

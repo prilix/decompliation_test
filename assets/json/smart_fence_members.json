@@ -1,0 +1,69 @@
+{
+  "message": "",
+  "result": [
+    {
+      "id": 293,
+      "detailsUserInfoId": 185,
+      "firstName": "airCloud",
+      "lastName": "Home",
+      "middleName": "",
+      "role": {
+        "id": 1,
+        "name": "OWNER",
+        "level": 1
+      },
+      "pictureData": {
+        "profilePictureUrl": "https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/335d5b8d4c8daed308a13cddb8b1bcee62517873?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201110T054943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20201110%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=df0565de7e01d24df4e51f788203cf80f9bd3b56cd4fe2524626fdcfe6c7eb5a",
+        "updatedOn": 1599479479
+      }
+    },
+    {
+      "id": 788,
+      "detailsUserInfoId": 472,
+      "firstName": "A",
+      "lastName": "",
+      "middleName": null,
+      "role": {
+        "id": 1,
+        "name": "OWNER",
+        "level": 1
+      },
+      "pictureData": {
+        "profilePictureUrl": "https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/ca6ab927e151ad3b74de9d17f69d711f7a820b5b?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201110T054943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20201110%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=230a2827187c2cf5b035ba23d1f6116ccd78fa33e9b189f82f6479df7f747d1c",
+        "updatedOn": 1589528027
+      }
+    },
+    {
+      "id": 1047,
+      "detailsUserInfoId": 602,
+      "firstName": "B",
+      "lastName": "",
+      "middleName": null,
+      "role": {
+        "id": 2,
+        "name": "MEMBER",
+        "level": 2
+      },
+      "pictureData": {
+        "profilePictureUrl": "https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/ea40dc4966b986bcd55cc1478bc6fc2c7c221380?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20201110T054943Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20201110%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=6a2cf528209a763bf0c9f392cbe0a8c223eedef75502e695df94d82bf5f40436",
+        "updatedOn": 1591962475
+      }
+    },
+    {
+      "id": 1048,
+      "detailsUserInfoId": 603,
+      "firstName": "C",
+      "lastName": "",
+      "middleName": null,
+      "role": {
+        "id": 3,
+        "name": "CHILD",
+        "level": 3
+      },
+      "pictureData":{
+        "profilePictureUrl":"https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/ea40dc4966b986bcd55cc1478bc6fc2c7c221380?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200809T143537Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20200809%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=a613e4e9bbad656b3e77a2711815a137b73f731f9e080bbc74cd35460ca83b68",
+        "updatedOn":1591962475
+      }
+    }
+  ]
+}

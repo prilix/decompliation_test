@@ -1,0 +1,9 @@
+Requird string for other language
+
+Enabling Timer...  text requied for other language
+
+<string name="weekly_timer_enable_success">Weekly timer enabled successfully</string>
+    <string name="weekly_timer_disable_success">Weekly timer disabled successfully</string>
+    <string name="weekly_timer_enable_failed">Weekly timer enabled failed</string>
+    <string name="weekly_timer_disable_failed">Weekly timer disabled failed</string>
+

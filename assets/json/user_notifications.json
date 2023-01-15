@@ -1,0 +1,28 @@
+[
+  {
+    "id": "9c81e124-4726-4a18-8bae-29f7552ebc2f",
+    "title": null,
+    "body": null,
+    "category": "SMART-FENCE",
+    "subCategory": "LEAVING-DISABLED",
+    "data": {
+      "racId": "2",
+      "racName": "Dining",
+      "userName": "Shirokuma Kun",
+      "userId": "447"
+    },
+    "sentTimeInMilliseconds": 1597939342000
+  },
+  {
+    "id": "4eeb2240-2c17-4708-85e3-afd9259f7734",
+    "title": null,
+    "body": null,
+    "category": "SMART-FENCE",
+    "subCategory": "ENABLE-LOCATION-ACCESS-PERMISSION",
+    "data": {
+      "racId": "1",
+      "racName": "Living"
+    },
+    "sentTimeInMilliseconds": 1597939102000
+  }
+]

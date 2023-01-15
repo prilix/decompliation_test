@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/outer_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_idu_frost_wash_sub_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintEnd_toEndOf="@id/guideline94" app:layout_constraintStart_toStartOf="@id/guideline93" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Clean_Filter_Sub_Title" />
+    <com.jch.racWiFi.customViews.customWidgets.Button android:id="@id/button_clean_filter" android:layout_width="0.0dip" android:layout_marginBottom="83.0dip" app:fontName="@string/font_sanpro_bold" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline142" app:layout_constraintStart_toStartOf="@id/guideline141" style="@style/Button_Clean_Filter" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline93" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="30.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline94" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="30.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline141" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="44.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline142" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="44.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

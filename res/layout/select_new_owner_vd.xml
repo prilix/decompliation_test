@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/outer_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_select_new_owner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:fontName="@string/font_sanpro_bold" app:layout_constraintStart_toStartOf="@id/guideline113" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Select_New_Owner_Title" />
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_select_new_owner_sub_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintEnd_toEndOf="@id/guideline114" app:layout_constraintStart_toStartOf="@id/guideline113" app:layout_constraintTop_toBottomOf="@id/text_view_select_new_owner_title" style="@style/TextView_Select_New_Owner_Sub_Title" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline113" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="30.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline114" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="30.0dip" />
+    <View android:id="@id/view35" android:background="@color/textview_color_vd_dark" android:layout_width="fill_parent" android:layout_height="@dimen/view_height" android:layout_marginTop="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_view_select_new_owner_sub_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_select_new_owner" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="16.0dip" app:layout_constraintBottom_toTopOf="@id/layout_transfer_owner_ship" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/view35" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_transfer_owner_ship" android:background="@drawable/drawable_button_red_border" android:layout_width="0.0dip" android:layout_height="@dimen/button_height_vd" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip" android:stateListAnimator="@animator/selector_animator" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline114" app:layout_constraintStart_toStartOf="@id/guideline113" app:layout_constraintTop_toBottomOf="@id/recycler_view_select_new_owner">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1" />
+        <LinearLayout android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.1">
+            <com.jch.racWiFi.customViews.customWidgets.ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ImageView_Transfer_OwnerShip" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.6">
+            <com.jch.racWiFi.customViews.customWidgets.TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" app:fontName="@string/font_sanpro_bold" style="@style/TextView_Transfer_Owner_Ship" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.15" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

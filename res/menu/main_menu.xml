@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/group_one" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_home_svg" android:id="@id/homePageFragment" android:title="@string/menu_item_home" />
+        <item android:icon="@drawable/ic_manage_users_svg" android:id="@id/manageUsersFragment" android:title="@string/menu_item_manageUser" />
+        <item android:icon="@drawable/ic_manage_devices_svg" android:id="@id/manageDevicesFragment" android:title="@string/menu_item_manageAC" />
+    </group>
+    <group android:id="@id/group_two" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_weekly_timer_menu" android:enabled="true" android:id="@id/weeklyTimerDevicesFragmentV2" android:visible="true" android:title="@string/menu_item_weeklyTimer" />
+        <item android:icon="@drawable/ic_holiday_mode" android:id="@id/holidayModeFragment" android:title="@string/menu_item_holidaymode" />
+        <item android:icon="@drawable/ic_location_controls" android:id="@id/smartFenceNavGraph" android:title="@string/smartFence_lbl_smartFence" />
+        <item android:icon="@drawable/ic_energy_consumption" android:id="@id/energyConsumptionNavGraph" android:title="@string/energyConsumption_lbl_energyCost" />
+    </group>
+    <group android:id="@id/group_three" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_help_svg" android:id="@id/helpFragment" android:title="@string/menu_item_help" />
+        <item android:icon="@drawable/ic_customer_care_svg" android:id="@id/customerCareFragment" android:title="@string/menu_item_customerCare" />
+        <item android:icon="@drawable/ic_service_request" android:id="@id/serviceRequestFragment" android:visible="false" android:title="@string/serviceRequest_lbl_serviceRequest" />
+    </group>
+    <group android:id="@id/group_four" android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_my_account_svg" android:id="@id/myAccountFragment2" android:title="@string/menu_item_myAcc" />
+        <item android:icon="@drawable/ic_setting_svg" android:id="@id/settingsFragment" android:title="@string/menu_item_settings" />
+        <item android:icon="@drawable/ic_privacy_policy" android:id="@id/privacy_policy" android:title="@string/menu_item_privacyPolicy" />
+        <item android:icon="@drawable/ic_logout_svg" android:id="@id/nav_logout" android:title="@string/menu_item_logOut" />
+        <item android:icon="@android:drawable/ic_menu_directions" android:id="@id/direct_onboarding" android:title="Direct OnBoarding" />
+    </group>
+</menu>

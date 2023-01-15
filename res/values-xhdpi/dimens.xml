@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="add_members">64.0dip</dimen>
+    <dimen name="dialog_height_where_to_locate_qr_code">480.0dip</dimen>
+    <dimen name="fan_layout_width">40.0dip</dimen>
+    <dimen name="fan_speed_one_margin">28.0dip</dimen>
+    <dimen name="home_name_margin_top">8.0dip</dimen>
+    <dimen name="layout_margin">12.0dip</dimen>
+    <dimen name="margin_start">8.0dip</dimen>
+    <dimen name="margin_top_layout">80.0dip</dimen>
+    <dimen name="pop_up_location">210.0dip</dimen>
+    <dimen name="popup_height">240.0dip</dimen>
+    <dimen name="popup_width">260.0dip</dimen>
+    <dimen name="scroll_view_height">296.0dip</dimen>
+    <dimen name="select_contacts">61.0dip</dimen>
+    <dimen name="swing_auto_margin_start">30.0dip</dimen>
+    <dimen name="temp_text_size_wwekly_timer">20.0dip</dimen>
+    <dimen name="text_size_8dp">6.0dip</dimen>
+    <dimen name="text_view_padding_start">7.0dip</dimen>
+    <dimen name="view_height">0.39999998dip</dimen>
+</resources>

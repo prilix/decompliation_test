@@ -1,0 +1,11 @@
+[
+  {
+    "familyId": 180,
+    "familyName": "airCloud demo1",
+    "enabled": true
+  },{
+    "familyId": 181,
+    "familyName": "airCloud demo2",
+    "enabled": true
+  }
+]

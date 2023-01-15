@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_step_progress_bar_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_step_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginStart="@dimen/dp_26" app:fontName="@string/font_sanpro_regular" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Step_1" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/linearProgressIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:max="7" android:progress="1" android:layout_marginStart="@dimen/dp_26" android:layout_marginEnd="@dimen/dp_26" app:indicatorColor="@color/rac_name_oofline_color" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_view_step_1" app:trackColor="@color/dark_grey" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+{
+  "allRacsData": {
+    "cost": 171.0000,
+    "energyConsumed": 168.00,
+    "budget": 100.00,
+    "currency": "USD"
+  },
+  "individualRacsData": [
+    {
+      "vendorThingId": "JCH-801a9bbb",
+      "racName": "Living",
+      "racId": 100,
+      "cost": 7.0000,
+      "energyConsumed": 7.00
+    },
+    {
+      "vendorThingId": "JCH-886005b9",
+      "racName": "Dining",
+      "racId": 100,
+      "cost": 164.0000,
+      "energyConsumed": 161.00
+    }
+  ]
+}

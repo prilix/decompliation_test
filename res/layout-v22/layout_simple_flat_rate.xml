@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/layout_simple_flat_rate_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_unit_prize_kwh" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Unit_Prize_perKwh" />
+    <EditText android:id="@id/unit_price_flat_rate_edit_text" android:background="@drawable/edit_text_background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/edittext_height_vd" android:layout_marginTop="16.0dip" android:inputType="numberDecimal" android:layout_marginStart="16.0dip" android:layout_marginEnd="36.0dip" android:importantForAutofill="no" app:layout_constraintTop_toBottomOf="@id/text_view_unit_prize_kwh" />
+</androidx.constraintlayout.widget.ConstraintLayout>

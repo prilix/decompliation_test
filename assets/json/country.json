@@ -1,0 +1,10 @@
+[
+  {
+    "locale": "IN",
+    "milesOrKm": "km"
+  },
+  {
+    "locale": "US",
+    "milesOrKm": "mi"
+  }
+]

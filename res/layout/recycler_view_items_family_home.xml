@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_family_group" android:tag="layout/recycler_view_items_family_home_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_80"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_language" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8" android:singleLine="true" android:layout_marginStart="@dimen/dp_10" android:layout_marginEnd="@dimen/dp_8" app:fontName="@string/font_sanpro_regular" app:layout_constraintBottom_toTopOf="@id/view38" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Language" />
+    <View android:id="@id/view38" android:background="@color/textview_color_vd_dark" android:layout_width="fill_parent" android:layout_height="@dimen/view_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

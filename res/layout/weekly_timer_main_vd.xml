@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/weekly_timer_main_vd_0" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.jch.racWiFi.customViews.customWidgets.TextView android:id="@id/text_view_select_device_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintStart_toStartOf="@id/guideline193" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Select_Device" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline193" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="28.0dip" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline198" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="28.0dip" />
+    <View android:id="@id/view10" android:background="@color/textview_color_vd_light" android:layout_width="fill_parent" android:layout_height="@dimen/view_height" android:layout_marginTop="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/text_view_select_device_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_devices" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/guideline198" app:layout_constraintStart_toStartOf="@id/guideline193" app:layout_constraintTop_toBottomOf="@id/view10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

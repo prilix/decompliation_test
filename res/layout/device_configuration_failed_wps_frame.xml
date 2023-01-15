@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="0.08">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.jch.racWiFi.customViews.customWidgets.TextView android:ellipsize="end" android:gravity="center" android:id="@id/text_view_add_device_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:maxLines="2" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:fontName="@string/font_sanpro_regular" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextView_Add_Device_Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.92">
+        <include layout="@layout/device_configuration_failed_wps_vd" />
+    </LinearLayout>
+</LinearLayout>

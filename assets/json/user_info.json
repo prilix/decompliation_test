@@ -1,0 +1,42 @@
+{
+  "familyId":180,
+  "firstName":"airCloud",
+  "lastName":"Home",
+  "settings":{
+    "outOfHomeAddress":null,
+    "sensitiveToCold":false,
+    "temperatureUnit":"degC",
+    "outOfHomeLongitude":-181.0,
+    "homeOnWeekdays":false,
+    "language":"en",
+    "outOfHomeRadius":0.0,
+    "homeOnWeekends":false,
+    "outOfHomeRemainderEnabled":false,
+    "outOfHomeLatitude":-91.0
+  },
+  "address":{
+    "zipCode": "105-0022",
+    "city": "Minato-ku",
+    "street": "Kaigan",
+    "countryCode": "JP",
+    "state": "Tokyo",
+    "addressLine": "1-16-1"
+  },
+  "phoneNumber":null,
+  "pictureData":{
+    "demoMode": true,
+    "profilePictureUrl":"https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/335d5b8d4c8daed308a13cddb8b1bcee62517873?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200809T143528Z&X-Amz-SignedHeaders=host&X-Amz-Expires=299&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20200809%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=217889668d5ab2228c6a3a07f97d7a9dc07c36d49a5c7a2a9e72aad55d36e594",
+    "updatedOn":1596367779
+  },
+  "familyName":"Global's Home",
+  "roles":[
+    {
+      "level":1,
+      "name":"OWNER",
+      "id":1
+    }
+  ],
+  "middleName":"",
+  "id":185,
+  "email":"global_stage@mailinator.com"
+}

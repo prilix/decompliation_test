@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_graph" app:startDestination="@id/homePageFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="direct_onboard_main_frame" android:name="com.jch.racWiFi.iduOnBoarding.directOnboarding.DirectOnboardFragment" android:id="@id/direct_onboarding">
+        <action android:id="@id/action_directOnboardingFragment_to_qrScanFragment" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="manage_devices_frame" android:name="com.jch.racWiFi.userOnboarding.view.viewImpl.ManageDevicesViewFragmentV2" android:id="@id/manageDevicesFragment">
+        <action android:id="@id/action_manageDevicesFragment_to_deviceDetailsFragment" app:destination="@id/deviceDetailsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageDevicesFragment_to_qrScanFragment" app:destination="@id/qrScanFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageDevicesFragment_to_on_board_nav_graph" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="device_setting_frame_new" android:name="com.jch.racWiFi.userOnboarding.view.viewImpl.DeviceDetailsFragmentNew" android:id="@id/deviceDetailsFragment">
+        <action android:id="@id/action_deviceDetailsFragment_to_userPermisissionsDeviceSettingsFragment" app:destination="@id/userPermisissionsDeviceSettingsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_deviceDetailsFragment_to_manageDevicesFragment" app:destination="@id/manageDevicesFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_deviceDetailsFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:popUpTo="@id/homePageFragment" app:popUpToInclusive="true" />
+        <action android:id="@id/action_deviceDetailsFragment_to_manageUserFragment" app:destination="@id/manageUsersFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_deviceDetailsFragment_to_manageOwnersByRacIdFragment" app:destination="@id/ManageOwnersByRacIdFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="ManageOwnersByRacIdFragment" android:name="com.jch.racWiFi.userOnboarding.view.viewImpl.ManageOwnersByRacIdFragment" android:id="@id/ManageOwnersByRacIdFragment">
+        <action android:id="@id/action_ManageOwnersByRacIdFragment_to_deviceDetailsFragment" app:destination="@id/deviceDetailsFragment" app:enterAnim="@anim/exit_to_right" app:popExitAnim="@anim/enter_from_right" />
+    </fragment>
+    <fragment android:label="edit_user_frame" android:name="com.jch.racWiFi.userManagement.view.EditUserFragment" android:id="@id/editUserFragment" />
+    <fragment android:label="holiday_mode_fragment" android:name="com.jch.racWiFi.iduManagement.view.HolidayModeFragment" android:id="@id/holidayModeFragment">
+        <action android:id="@id/action_holidayModeFragment_To_setTemperatureHolidayModeFragment" app:destination="@id/setTemperatureHolidayModeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="holiday_mode_fragment" android:name="com.jch.racWiFi.iduManagement.view.SetTemperatureHolidayModeFragment" android:id="@id/setTemperatureHolidayModeFragment" />
+    <fragment android:label="add_device_user_permissions" android:name="com.jch.racWiFi.userManagement.view.viewImpl.UserPermissionsManageUsersFragment" android:id="@id/userPermisissionsDeviceSettingsFragment" />
+    <fragment android:label="weekly_timer_main_frame" android:name="com.jch.racWiFi.iduManagement.view.WeeklyTimerDevicesFragmentV2" android:id="@id/weeklyTimerDevicesFragmentV2">
+        <action android:id="@id/action_weeklyTimerDevicesFragment_to_weeklyTimerFragmentV3" app:destination="@id/weeklyTimerFragmentV3" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_weeklyTimerDevicesFragmentV2_to_weeklyTimerCopyTimerScheduleFragment" app:destination="@id/weeklyTimerCopyTimerScheduleFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="weekly_timer_copy_frame" android:name="com.jch.racWiFi.iduManagement.view.WeeklyTimerCopyTimerScheduleFragment" android:id="@id/weeklyTimerCopyTimerScheduleFragment" />
+    <fragment android:label="home_page_updated_vd" android:name="com.jch.racWiFi.iduManagement.view.viewImpl.HomePageFragment" android:id="@id/homePageFragment">
+        <action android:id="@id/action_homePageFragment_to_manageDevicesFragment" app:destination="@id/manageDevicesFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_qrScanFragment" app:destination="@id/qrScanFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_manageUsersFragment" app:destination="@id/manageUsersFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_customerCareFragment" app:destination="@id/customerCareFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_settingsFragment" app:destination="@id/settingsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_helpFragment" app:destination="@id/helpFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_self" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_individualIDUControlFragmentV3" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_weeklyTimerDevicesFragment" app:destination="@id/weeklyTimerDevicesFragmentV2" />
+        <action android:id="@id/action_individualIDUControlFragment_to_privacyPolicyFragment" app:destination="@id/privacy_policy" />
+        <action android:id="@id/action_homePageFragment_to_inviteUsersFragmentNewVd" app:destination="@id/inviteUsersFragmentNewVD" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_on_board_nav_graph" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_smart_fence_navGraph" app:destination="@id/smartFenceNavGraph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_holiday_mode_fragment" app:destination="@id/holidayModeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_homePageFragment_to_energy_consumption_NavGraph" app:destination="@id/energyConsumptionNavGraph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <navigation android:id="@id/smartFenceNavGraph" app:startDestination="@id/smartFenceFragment">
+        <fragment android:label="smartFenceFragment" android:name="com.jch.racWiFi.iduManagement.smartFence.view.SmartFenceFragment" android:id="@id/smartFenceFragment" app:popUpTo="@id/homePageFragment" app:popUpToInclusive="true">
+            <action android:id="@id/action_smartFenceFragment_to_SmartFenceSelectAcFragmentt" app:destination="@id/SmartFenceSelectAcFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_smartFenceFragment_to_SmartFenceSelectAcFragment" app:destination="@id/SmartFenceSelectUserFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_smartFenceFragment_to_SmartFenceGeoFenceSettings" app:destination="@id/SmartFenceGeoFenceSettings" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_SmartFenceFragment_to_OnBoarding" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <action android:id="@id/action_global_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/smartFenceNavGraph" app:popUpToInclusive="true" />
+        <fragment android:label="SmartFenceSelectAcFragment" android:name="com.jch.racWiFi.iduManagement.smartFence.view.SmartFenceSelectAcFragment" android:id="@id/SmartFenceSelectAcFragment" />
+        <fragment android:label="SmartFenceSelectUserFragment" android:name="com.jch.racWiFi.iduManagement.smartFence.view.SmartFenceSelectUserFragment" android:id="@id/SmartFenceSelectUserFragment" />
+        <fragment android:label="SmartFenceGeoFenceSettings" android:name="com.jch.racWiFi.iduManagement.smartFence.view.SmartFenceGeoFenceSettings" android:id="@id/SmartFenceGeoFenceSettings" />
+    </navigation>
+    <fragment android:label="invite_user_new_vd" android:name="com.jch.racWiFi.userManagement.view.InviteUsersFragmentNewVD" android:id="@id/inviteUsersFragmentNewVD">
+        <action android:id="@id/action_inviteUsersFragmentNewVD_to_manageUsersFragment" app:destination="@id/manageUsersFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="idu_control_screen" android:name="com.jch.racWiFi.iduManagement.view.viewImpl.IndividualIDUControlFragmentModelWise" android:id="@id/individualIDUControlFragment">
+        <action android:id="@id/action_individualIDUControlFragment_to_helpFragment" app:destination="@id/helpFragment1" />
+        <action android:id="@id/action_individualIDUControlFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_individualIDUControlFragment_to_setTimerFragmentV2" app:destination="@id/setTimerFragmentV2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_individualIDUControlFragment_to_cleaningStartFragment" app:destination="@id/cleaningStartFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_weeklyTimerDevicesFragment_to_weeklyTimerFragmentV3" app:destination="@id/weeklyTimerFragmentV3" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_individualIDUControlFragment_to_customerCareFragment" app:destination="@id/customerCareFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="help_frame_global_app" android:name="com.jch.racWiFi.settings.view.HelpFragmentGlobal" android:id="@id/helpFragment">
+        <action android:id="@id/action_helpFragment_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_helpFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="help_frame_global_app" android:name="com.jch.racWiFi.settings.view.HelpFragmentGlobal" android:id="@id/helpFragment1">
+        <action android:id="@id/action_helpFragment_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" />
+        <action android:id="@id/action_helpFragment_to_homePageFragment" app:destination="@id/homePageFragment" />
+        <argument android:name="detailedIduModel" app:argType="com.jch.racWiFi.iduManagement.model.DetailedIduModel" />
+        <argument android:name="helpWebPageModel" app:argType="com.jch.racWiFi.HelpWebPageModel" />
+    </fragment>
+    <fragment android:label="my_account_new_vd" android:name="com.jch.racWiFi.userManagement.view.MyAccountFragment" android:id="@id/myAccountFragment2">
+        <action android:id="@id/action_myAccountFragment2_to_myAccountProfilePictureFragment" app:destination="@id/myAccountProfilePictureFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_myAccountNameFragment" app:destination="@id/myAccountNameFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_myAccountAddressFragment" app:destination="@id/myAccountAddressFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_changePasswordFragment" app:destination="@id/changePasswordFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_myAccountManageHomesFragment" app:destination="@id/myAccountManageHomesFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_deleteAccountTransferOwnerShipFragment" app:destination="@id/deleteAccountChangeOwnership" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_AccountDisabledSuccessFragment" app:destination="@id/AccountDisabledSuccessFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountFragment2_to_AccountDeletedSuccessFragment" app:destination="@id/AccountDeletedSuccessFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="AccountDisabledSuccessFragment" android:name="com.jch.racWiFi.userManagement.view.AccountDisabledSuccessFragment" android:id="@id/AccountDisabledSuccessFragment" />
+    <fragment android:label="AccountDeletedSuccessFragment" android:name="com.jch.racWiFi.userManagement.view.AccountDeletedSuccessFragment" android:id="@id/AccountDeletedSuccessFragment" />
+    <fragment android:label="my_account_manage_homes_fragment" android:name="com.jch.racWiFi.userManagement.view.MyAccountManageHomesFragment" android:id="@id/myAccountManageHomesFragment">
+        <action android:id="@id/action_manageHomesFragment_to_myAccountTransferOwnerShipFragment" app:destination="@id/myAccountChangeOwnerShipFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageHomesFragment_to_myAccountFragment" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="my_account_change_owner_ship_fragment" android:name="com.jch.racWiFi.userManagement.view.MyAccountTransferOwnerShipFragment" android:id="@id/myAccountChangeOwnerShipFragment">
+        <action android:id="@id/action_myAccountChangeOwnerShipFragment_to_myAccountManageHomesFragment" app:destination="@id/myAccountManageHomesFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountChangeOwnerShipFragment_to_homepage" app:destination="@id/homePageFragment" app:popUpTo="@id/homePageFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="delete_account_change_owner_ship_fragment" android:name="com.jch.racWiFi.userManagement.view.DeleteAndDisableAccountTransferOwnerShipFragment" android:id="@id/deleteAccountChangeOwnership">
+        <action android:id="@id/action_deleteAccountChangeOwnerShipFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_deleteAccountChangeOwnership_to_AccountDisabledSuccessFragment" app:destination="@id/AccountDisabledSuccessFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_deleteAccountChangeOwnership_to_AccountDeletedSuccessFragment" app:destination="@id/AccountDeletedSuccessFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="my_account_picture_frame" android:name="com.jch.racWiFi.userManagement.view.MyAccountProfilePictureFragmentV3" android:id="@id/myAccountProfilePictureFragment">
+        <action android:id="@id/action_myAccountProfilePictureFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_myAccountProfilePictureFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:popUpTo="@id/homePageFragment" app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:label="my_account_name_frame_with_bubble" android:name="com.jch.racWiFi.userManagement.view.MyAccountNameFragment" android:id="@id/myAccountNameFragment">
+        <action android:id="@id/action_myAccountNameFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="my_account_address_frame_with_bubble" android:name="com.jch.racWiFi.userManagement.view.MyAccountAddressFragment" android:id="@id/myAccountAddressFragment">
+        <action android:id="@id/action_myAccountAddressFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="manage_users_frame" android:name="com.jch.racWiFi.userManagement.view.ManageUsersFragment" android:id="@id/manageUsersFragment">
+        <action android:id="@id/action_manageUsersFragment_to_userPermissionsManageUsersFragment" app:destination="@id/userPermissionsManageUsersFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageUsersFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageUsersFragment_to_editUserFragment" app:destination="@id/editUserFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_manageUserfragment_to_inviteUserFragmentNewVD" app:destination="@id/inviteUsersFragmentNewVD" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="customer_care_vd_global" android:name="com.jch.racWiFi.settings.view.CustomerCareFragmentGlobal" android:id="@id/customerCareFragment">
+        <action android:id="@id/action_customerCareFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="service_request_frame" android:name="com.jch.racWiFi.settings.view.ServiceRequestFragment" android:id="@id/serviceRequestFragment">
+        <action android:id="@id/action_serviceRequestFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="settings_frame" android:name="com.jch.racWiFi.settings.view.SettingsFragment" android:id="@id/settingsFragment">
+        <action android:id="@id/action_settingsFragment_to_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_settingsFragment_to_temperaturePreferenceFragment" app:destination="@id/temperaturePreferenceFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_settingsFragment_to_userPreferencesFragment" app:destination="@id/userPreferencesFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="add_device_user_permissions" android:name="com.jch.racWiFi.userManagement.view.viewImpl.UserPermissionsManageUsersFragment" android:id="@id/userPermissionsManageUsersFragment">
+        <action android:id="@id/action_userPermissionsManageUsersFragment_to_manageUsersFragment" app:destination="@id/manageUsersFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="temprature_unit_frame" android:name="com.jch.racWiFi.settings.view.TemperaturePreferenceFragment" android:id="@id/temperaturePreferenceFragment">
+        <action android:id="@id/action_temperaturePreferenceFragment_to_settingsFragment" app:destination="@id/settingsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="clean_filter_frame_start" android:name="com.jch.racWiFi.iduManagement.view.CleaningStartFragment" android:id="@id/cleaningStartFragment">
+        <action android:id="@id/action_cleaningStartFragment_to_cleaningModeInProgressFragment" app:destination="@id/cleaningModeInProgressFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="clean_filter_frame_progess" android:name="com.jch.racWiFi.iduManagement.view.CleaningModeInProgressFragment" android:id="@id/cleaningModeInProgressFragment">
+        <action android:id="@id/action_cleaningModeInProgressFragment_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_cleaningModeInProgressFragment_to_cleaningDoneFragment" app:destination="@id/cleaningDoneFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="clean_filter_frame_done" android:name="com.jch.racWiFi.iduManagement.view.CleaningDoneFragment" android:id="@id/cleaningDoneFragment">
+        <action android:id="@id/action_cleaningDoneFragment_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="my_account_change_password_frame" android:name="com.jch.racWiFi.userManagement.view.ChangePasswordFragment" android:id="@id/changePasswordFragment">
+        <action android:id="@id/action_changePasswordFragment_to_myAccountFragment2" app:destination="@id/myAccountFragment2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="weekly_timer_global_frame" android:name="com.jch.racWiFi.iduManagement.view.WeeklyTimerFragmentV3" android:id="@id/weeklyTimerFragmentV3">
+        <action android:id="@id/action_weeklyTimerFragmentV2_to_weeklyTimerScheduleSettingsFragmentV3" app:destination="@id/weeklyTimerScheduleSettingsFragmentV3" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="set_timer_frame" android:name="com.jch.racWiFi.iduManagement.view.SetTimerFragmentV2" android:id="@id/setTimerFragmentV2">
+        <action android:id="@id/action_setTimerFragmentV2_to_individualIDUControlFragment" app:destination="@id/individualIDUControlFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_setTimerFragmentV2_to_setModeAndTempratureFragmentV2" app:destination="@id/setModeAndTempratureFragmentV2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="set_mode_and_temprature_global" android:name="com.jch.racWiFi.iduManagement.view.SetModeAndTemperatureModelWise" android:id="@id/setModeAndTempratureFragmentV2">
+        <action android:id="@id/action_setModeAndTempratureFragmentV2_to_setTimerFragmentV2" app:destination="@id/setTimerFragmentV2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        <action android:id="@id/action_setModeAndTempratureFragmentV2_to_setTimerFragmentV22" app:destination="@id/setTimerFragmentV2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="schedule_settings_weekly_timer" android:name="com.jch.racWiFi.iduManagement.view.WeeklyTimerScheduleSettingsFragmentModelWise" android:id="@id/weeklyTimerScheduleSettingsFragmentV3">
+        <action android:id="@id/action_weeklyTimerScheduleSettingsFragmentV2_to_setModeAndTempratureFragmentV2" app:destination="@id/setModeAndTempratureFragmentV2" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment android:label="user_prefrence_frame" android:name="com.jch.racWiFi.userManagement.view.UserPreferencesFragment" android:id="@id/userPreferencesFragment" />
+    <action android:id="@id/action_global_homePageFragment" app:destination="@id/homePageFragment" />
+    <fragment android:label="fragment_privacy_policy" android:name="com.jch.racWiFi.settings.view.PrivacyPolicyFragment" android:id="@id/privacy_policy" />
+    <navigation android:id="@id/energyConsumptionNavGraph" app:startDestination="@id/nav_energy_consumption">
+        <fragment android:label="@string/energy_consumption" android:name="com.jch.racWiFi.energyConsumption.view.EnergyConsumptionFragment" android:id="@id/nav_energy_consumption">
+            <action android:id="@id/action_nav_energy_consumption_to_consumedEnergyGraphFragment" app:destination="@id/consumedEnergyGraphFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_nav_energy_consumption_to_ecHomeFragment" app:destination="@id/ecHomeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/nav_energy_consumption" app:popUpToInclusive="true" />
+            <action android:id="@id/action_energyConsumption_to_qrScanFragment" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_energyConsumption_to_ecSelectACsFragment" app:destination="@id/ecSelectACsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/nav_energy_consumption" app:popUpToInclusive="true" />
+        </fragment>
+        <fragment android:label="ConsumedEnergyGraphFragment" android:name="com.jch.racWiFi.energyConsumption.view.ConsumedEnergyGraphFragment" android:id="@id/consumedEnergyGraphFragment">
+            <action android:id="@id/action_consumedEnergyGraphFragment_to_budgetSetUpFragment" app:destination="@id/budgetSetUpFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="ECHomeFragment" android:name="com.jch.racWiFi.energyConsumption.fragment.ECHomeFragment" android:id="@id/ecHomeFragment">
+            <action android:id="@id/action_ecHomeFragment_to_ecSelectACsFragment" app:destination="@id/ecSelectACsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/ecHomeFragment" app:popUpToInclusive="true" />
+        </fragment>
+        <fragment android:label="BudgetSetUpFragment" android:name="com.jch.racWiFi.energyConsumption.view.BudgetSetUpFragment" android:id="@id/budgetSetUpFragment">
+            <action android:id="@id/action_budgetSetUpFragment_to_selectCurrencyDialogFragment" app:destination="@id/selectCurrencyDialogFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_budgetSetUpFragment_to_selectBillingStructureFragment" app:destination="@id/selectBillingStructureFragment" />
+        </fragment>
+        <fragment android:label="ECSelectACFragment" android:name="com.jch.racWiFi.energyConsumption.fragment.ECSelectACFragment" android:id="@id/ecSelectACsFragment">
+            <action android:id="@id/action_EcSelectACsFragment_to_EnergyConsumptionFragment" app:destination="@id/nav_energy_consumption" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/ecSelectACsFragment" app:popUpToInclusive="true" />
+            <action android:id="@id/action_EcSelectACsFragment_to_ECHomeFragment" app:destination="@id/ecHomeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/ecSelectACsFragment" app:popUpToInclusive="true" />
+            <action android:id="@id/action_EcSelectACsFragment_to_qrScanFragment" app:destination="@id/on_board_nav_graph" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <dialog android:label="SelectCurrencyDialogFragment" android:name="com.jch.racWiFi.energyConsumption.dialog.SelectCurrencyDialogFragment" android:id="@id/selectCurrencyDialogFragment" />
+        <dialog android:label="SelectBillingStructureFragment" android:name="com.jch.racWiFi.energyConsumption.dialog.SelectBillingStructureFragment" android:id="@id/selectBillingStructureFragment" />
+    </navigation>
+    <navigation android:id="@id/on_board_nav_graph" app:startDestination="@id/qrScanFragment">
+        <fragment android:label="fragment_qr_scan" android:name="com.jch.racWiFi.iduOnBoarding.common.view.QrScanFragmentV2" android:id="@id/qrScanFragment">
+            <action android:id="@id/action_qrScanFragment_to_qrCodeScanned" app:destination="@id/qrCodeScanned" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_qrScanFragment_to_unableToScanQrSsidFragment" app:destination="@id/unableToScanQrSsidFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="qrCodeScanned" android:name="com.jch.racWiFi.iduOnBoarding.common.view.QrCodeScnnedFragment" android:id="@id/qrCodeScanned">
+            <action android:id="@id/action_qrCodeScanned_to_addDeviceFragment" app:destination="@id/selectWpsOrApMethodFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/qrCodeScanned" app:popUpToInclusive="true" />
+            <action android:id="@id/to_confirmWirelessNetworkIndiaFrag" app:destination="@id/confirmWirelessNetworkIndianFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/qrCodeScanned" app:popUpToInclusive="true" />
+            <action android:id="@id/action_qrCodeScanned_to_acAddedInOtherFragment" app:destination="@id/acAddedInOtherFragment" app:popUpTo="@id/qrCodeScanned" app:popUpToInclusive="true" />
+            <action android:id="@id/action_qrCodeScanned_to_acAddedInSameHomeFragment" app:destination="@id/acAddedInSameHomeFragment" app:popUpTo="@id/qrCodeScanned" app:popUpToInclusive="true" />
+        </fragment>
+        <fragment android:label="fragment_select_device_type" android:name="com.jch.racWiFi.iduOnBoarding.common.view.SelectDeviceTypeFragment" android:id="@id/selectDeviceTypeFragment">
+            <action android:id="@id/action_selectDeviceTypeFragment_to_addDeviceFragment" app:destination="@id/selectWpsOrApMethodFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_selectDeviceTypeFragment_to_confirmWirelessNetworkIndiaFrag" app:destination="@id/confirmWirelessNetworkIndianFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_add_device" android:name="com.jch.racWiFi.iduOnBoarding.common.view.SelectWpsOrApFragment" android:id="@id/selectWpsOrApMethodFragment">
+            <action android:id="@id/to_confirmWirelessNetworkIndiaFrag" app:destination="@id/confirmWirelessNetworkIndianFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/qrCodeScanned" app:popUpToInclusive="true" />
+            <action android:id="@id/to_confirmNetworkWpsFragment" app:destination="@id/wpsConfirmNetworkFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/to_confirmNetworkApFragment" app:destination="@id/apConfirmNetworkFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_confirm_wireless_network_india" android:name="com.jch.racWiFi.iduOnBoarding.IndiaModelOnboardingFlow.view.viewImpl.ConfirmWirelessNetworkIndianRac" android:id="@id/confirmWirelessNetworkIndianFrag">
+            <action android:id="@id/to_switchOnAirConditionerFrag" app:destination="@id/switchOnAirConditionerFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_add_home_router" android:name="com.jch.racWiFi.iduOnBoarding.onBoadingInApMode.views.AddHomeRouter" android:id="@id/addHomeRouter">
+            <action android:id="@id/action_addHomeRouter_to_addRac" app:destination="@id/addRac" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_add_rac" android:name="com.jch.racWiFi.iduOnBoarding.onBoadingInApMode.views.AddRac" android:id="@id/addRac">
+            <action android:id="@id/action_addRac_to_configuringDeviceUdpExchange" app:destination="@id/configuringDeviceUdpExchange" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_addRac_to_configuringFailedUdpExchange" app:destination="@id/configuringFailedUdpExchange" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_configuring_device_udp_exchange" android:name="com.jch.racWiFi.iduOnBoarding.common.view.ConfiguringDeviceUdpExchange" android:id="@id/configuringDeviceUdpExchange">
+            <action android:id="@id/action_configuringDeviceUdpExchange_to_configuringDeviceCheckMdns" app:destination="@id/configuringDeviceCheckMdns" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_configuringDeviceUdpExchange_to_configuringFailedUdpExchange" app:destination="@id/configuringFailedUdpExchange" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="device_configuration_failed_wps_frame" android:name="com.jch.racWiFi.iduOnBoarding.common.view.OnBoardingFailureFragment" android:id="@id/configuringFailedUdpExchange">
+            <action android:id="@id/action_configuringFailedUdpExchange_to_configuringDeviceCheckMdns" app:destination="@id/configuringDeviceCheckMdns" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_configuringFailedUdpExchange_to_qrScanFragment" app:destination="@id/qrScanFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_add_home_router_wps" android:name="com.jch.racWiFi.iduOnBoarding.wps.withQrCode.view.EnableWpsOnRacFragment" android:id="@id/enableWpsOnRacFragment">
+            <action android:id="@id/action_enableWpsOnRacFragment_to_enableWpsOnHomeRouterFragment" app:destination="@id/enableWpsOnHomeRouterFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_success" android:name="com.jch.racWiFi.iduOnBoarding.common.view.OnboardingSuccessFragmentV2" android:id="@id/successFragment" />
+        <fragment android:label="fragment_switch_on_air_conditioner_india" android:name="com.jch.racWiFi.iduOnBoarding.IndiaModelOnboardingFlow.view.viewImpl.SwitchOnAirConditoner" android:id="@id/switchOnAirConditionerFrag">
+            <action android:id="@id/action_switchOnAirConditionerFrag_to_addRac" app:destination="@id/addRac" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_enable_wps_on_rac_without_qr" android:name="com.jch.racWiFi.iduOnBoarding.wps.withoutQrCode.view.EnableWpsOnRacWithoutQrFrag" android:id="@id/enableWpsOnRacWithoutQrFrag">
+            <action android:id="@id/action_enableWpsOnRacWithoutQrFrag_to_enableWpsOnHomeRouterFragment" app:destination="@id/enableWpsOnHomeRouterFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="enable_ap_adapter_step_4_of_4_frame_new" android:name="com.jch.racWiFi.iduOnBoarding.common.view.ConnectBackToHomeRouterFragment" android:id="@id/connectBackToHomeRouterFragment">
+            <action android:id="@id/action_connectBackToHomeRouterFragment_to_configuringDeviceCheckMdns" app:destination="@id/configuringDeviceCheckMdns" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_enable_wps_on_home_router" android:name="com.jch.racWiFi.iduOnBoarding.wps.withQrCode.view.EnableWpsOnHomeRouterFragment" android:id="@id/enableWpsOnHomeRouterFragment">
+            <action android:id="@id/action_enableWpsOnHomeRouterFragment_to_configuringDeviceCheckMdns" app:destination="@id/configuringDeviceCheckMdns" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="fragment_configuring_device_check_mdns" android:name="com.jch.racWiFi.iduOnBoarding.common.view.ConfiguringDeviceCheckMdns" android:id="@id/configuringDeviceCheckMdns">
+            <action android:id="@id/action_configuringPageFragment_to_successFragment" app:destination="@id/successFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_configuringDeviceCheckMdns_to_connectBackToHomeRouterFragment" app:destination="@id/connectBackToHomeRouterFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_configuringDeviceCheckMdns_to_configuringFailedUdpExchange" app:destination="@id/configuringFailedUdpExchange" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <action android:id="@id/action_global_deviceDetailsFragment" app:destination="@id/deviceDetailsFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/on_board_nav_graph" app:popUpToInclusive="true" />
+        <action android:id="@id/action_global_homePageFragment" app:destination="@id/homePageFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" app:popUpTo="@id/on_board_nav_graph" app:popUpToInclusive="true" />
+        <fragment android:label="WpsConfirmNetworkFragment" android:name="com.jch.racWiFi.iduOnBoarding.wps.withQrCode.view.ConfirmNetworkWpsFragment" android:id="@id/wpsConfirmNetworkFragment">
+            <action android:id="@id/action_wpsConfirmNetworkFragment_to_enableWpsOnRacFragment" app:destination="@id/enableWpsOnRacFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="ApConfirmNetworkFragment" android:name="com.jch.racWiFi.iduOnBoarding.onBoadingInApMode.views.ConfirmNetworkApFragment" android:id="@id/apConfirmNetworkFragment">
+            <action android:id="@id/action_apConfirmNetworkFragment_to_addHomeRouter" app:destination="@id/addHomeRouter" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <fragment android:label="UnableToScanQrSsidFragment" android:name="com.jch.racWiFi.iduOnBoarding.common.view.UnableToScanQrSsidFragment" android:id="@id/unableToScanQrSsidFragment">
+            <action android:id="@id/action_unableToScanQrSsidFragment_to_selectDeviceTypeFragment" app:destination="@id/selectDeviceTypeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_unableToScanQrSsidFragment_to_acAddedInSameHomeFragment" app:destination="@id/acAddedInSameHomeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_unableToScanQrSsidFragment_to_acAddedInOtherFragment" app:destination="@id/acAddedInOtherFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </fragment>
+        <dialog android:label="AcAddedInSameHomeFragment" android:name="com.jch.racWiFi.iduOnBoarding.common.dialog.AcAddedInSameHomeFragment" android:id="@id/acAddedInSameHomeFragment">
+            <action android:id="@id/action_acAddedInSameHomeFragment_to_selectDeviceTypeFragment" app:destination="@id/selectDeviceTypeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_acAddedInSameHomeFragment_to_addDeviceFragment" app:destination="@id/selectWpsOrApMethodFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_acAddedInSameHomeFragment_to_confirmWirelessNetworkFrag" app:destination="@id/confirmWirelessNetworkIndianFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </dialog>
+        <dialog android:label="AcAddedInSameOtherFragment" android:name="com.jch.racWiFi.iduOnBoarding.common.dialog.AcAddedInOtherFragment" android:id="@id/acAddedInOtherFragment">
+            <action android:id="@id/action_acAddedInOtherFragment_to_selectDeviceTypeFragment" app:destination="@id/selectDeviceTypeFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_acAddedInOtherFragment_to_addDeviceFragment" app:destination="@id/selectWpsOrApMethodFragment" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+            <action android:id="@id/action_acAddedInOtherFragment_to_confirmWirelessNetworkFrag" app:destination="@id/confirmWirelessNetworkIndianFrag" app:enterAnim="@anim/enter_from_right" app:popExitAnim="@anim/exit_to_right" />
+        </dialog>
+    </navigation>
+</navigation>

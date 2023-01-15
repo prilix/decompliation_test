@@ -1,0 +1,33 @@
+{
+  "message": "",
+  "result": [
+    {
+      "familyId": 180,
+      "familyName": "airCloud demo1",
+      "createdBy": "airCloud demo1",
+      "role": {
+        "id": 1,
+        "name": "OWNER",
+        "level": 1
+      },
+      "pictureData": {
+        "profilePictureUrl": "https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/335d5b8d4c8daed308a13cddb8b1bcee62517873?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200809T190410Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20200809%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=4aebb1feb93bf4b9713401dfd0f4965febd7f3ea4aa158366fc57d152a2e05a7",
+        "updatedOn": 1596367779
+      }
+    },
+    {
+      "familyId": 181,
+      "familyName": "airCloud demo2",
+      "createdBy": "airCloud demo2",
+      "role": {
+        "id": 1,
+        "name": "MEMBER",
+        "level": 1
+      },
+      "pictureData": {
+        "profilePictureUrl": "https://jch-global-profile-pictures-stage.s3.ap-northeast-1.amazonaws.com/335d5b8d4c8daed308a13cddb8b1bcee62517873?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20200809T190410Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=AKIARJNYLY27UFYOFOZQ%2F20200809%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=4aebb1feb93bf4b9713401dfd0f4965febd7f3ea4aa158366fc57d152a2e05a7",
+        "updatedOn": 1596367779
+      }
+    }
+  ]
+}

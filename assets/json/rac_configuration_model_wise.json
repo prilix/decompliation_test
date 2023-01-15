@@ -1,0 +1,548 @@
+[
+  {
+    "id": 3,
+    "racType": "JP-Premium",
+    "racTypeId": 3,
+    "cloudId": "3_JP-Premium",
+    "swing": {
+      "HORIZONTAL": true,
+      "VERTICAL": true
+    },
+    "region": "JP",
+    "racOperationModes": [
+      {
+        "id": 2,
+        "featureId": 2,
+        "mode": "COOLING",
+        "sendingValue": 64,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 16.0,
+        "maxTemperature": 32.0,
+        "defaultTemperature": 27.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": true,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          64
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 6,
+        "featureId": 6,
+        "mode": "FAN",
+        "sendingValue": 81,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 0.0,
+        "maxTemperature": 0.0,
+        "defaultTemperature": 0.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": false,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": false,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": true,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": false
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": false
+        },
+        "kiiValues": [
+          81
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 1,
+        "featureId": 1,
+        "mode": "AUTO",
+        "sendingValue": 32768,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 22.0,
+        "maxTemperature": 28.0,
+        "defaultTemperature": 25.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": true,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          32768
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 5,
+        "featureId": 5,
+        "mode": "DRY",
+        "sendingValue": 35,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 10.0,
+        "maxTemperature": 32.0,
+        "defaultTemperature": 24.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 40.0,
+        "maxHumidity": 60.0,
+        "defaultHumidity": 50.0,
+        "humiditySettingPitchType": 5.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": true,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": true,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": true,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          35
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 3,
+        "featureId": 3,
+        "mode": "HEATING",
+        "sendingValue": 16,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 16.0,
+        "maxTemperature": 32.0,
+        "defaultTemperature": 23.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": true,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          16
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      }
+    ],
+    "enabledOptions": {
+      "option0": {
+        "weeklyTimer": true,
+        "powerConsumption": true,
+        "childLock": false,
+        "temperatureSettings": false,
+        "cleanHistory": false,
+        "outOfHomeReminder": true,
+        "onceTimer": true
+      },
+      "option1": {
+        "holidayModeLeaveHome": false,
+        "airSleep": false,
+        "airSleepTimer": false,
+        "welcomeBreeze": false,
+        "refresh": false
+      },
+      "option2": {
+        "eco": false,
+        "iduFrostWash": true,
+        "oduFrostWash": false,
+        "cleanFilter": false
+      }
+    }
+  },
+  {
+    "id": 8,
+    "racType": "India 2020 mass",
+    "cloudId": "157_India_2020_mass",
+    "racTypeId": 157,
+    "swing": {
+      "HORIZONTAL": false,
+      "VERTICAL": true
+    },
+    "region": "IN",
+    "racOperationModes": [
+      {
+        "id": 30,
+        "featureId": 30,
+        "mode": "FAN",
+        "sendingValue": 81,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 0.0,
+        "maxTemperature": 0.0,
+        "defaultTemperature": 0.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": false,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": false,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": false,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": false
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": false
+        },
+        "kiiValues": [
+          81
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 29,
+        "featureId": 29,
+        "mode": "AUTO",
+        "sendingValue": 32768,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 22.0,
+        "maxTemperature": 28.0,
+        "defaultTemperature": 25.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": true,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          32768,
+          32784,
+          32800,
+          32832
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 28,
+        "featureId": 28,
+        "mode": "DRY",
+        "sendingValue": 33,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 16.0,
+        "maxTemperature": 32.0,
+        "defaultTemperature": 24.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": true,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": false
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": true,
+          "AUTO": false
+        },
+        "kiiValues": [
+          33
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      },
+      {
+        "id": 27,
+        "featureId": 27,
+        "mode": "COOLING",
+        "sendingValue": 64,
+        "temperatureSetting": "ABSOLUTE",
+        "minTemperature": 16.0,
+        "maxTemperature": 32.0,
+        "defaultTemperature": 27.0,
+        "temperatureSettingPitchType": 1.0,
+        "minHumidity": 0.0,
+        "maxHumidity": 0.0,
+        "defaultHumidity": 0.0,
+        "humiditySettingPitchType": 0.0,
+        "enableSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "visibleSettings": {
+          "temperature": true,
+          "humidity": false,
+          "fan": true,
+          "swing": true,
+          "timer": true,
+          "eco": false
+        },
+        "enableFanSpeed": {
+          "LV5": true,
+          "LV4": true,
+          "LV1": true,
+          "LV3": true,
+          "LV2": true,
+          "AUTO": true
+        },
+        "defaultFanSpeed": {
+          "LV5": false,
+          "LV4": false,
+          "LV1": false,
+          "LV3": false,
+          "LV2": false,
+          "AUTO": true
+        },
+        "kiiValues": [
+          64
+        ],
+        "referenceTemperature": 0.0,
+        "visibleTemperatureSetting": "ABSOLUTE"
+      }
+    ],
+    "enabledOptions": {
+      "option0": {
+        "weeklyTimer": true,
+        "powerConsumption": true,
+        "childLock": false,
+        "temperatureSettings": false,
+        "cleanHistory": false,
+        "outOfHomeReminder": true,
+        "onceTimer": true
+      },
+      "option1": {
+        "holidayModeLeaveHome": false,
+        "airSleep": false,
+        "airSleepTimer": false,
+        "welcomeBreeze": false,
+        "refresh": false
+      },
+      "option2": {
+        "eco": false,
+        "iduFrostWash": false,
+        "oduFrostWash": false,
+        "cleanFilter": false
+      }
+    }
+  }
+]
+

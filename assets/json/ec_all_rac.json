@@ -1,0 +1,16 @@
+{
+  "allRacList": [
+    {
+      "racId": 100,
+      "racName": "Living",
+      "isSelected": false,
+      "isEnergyConsumptionSupported": true
+    },
+    {
+      "racId": 101,
+      "racName": "Dining",
+      "isSelected": false,
+      "isEnergyConsumptionSupported": true
+    }
+  ]
+}

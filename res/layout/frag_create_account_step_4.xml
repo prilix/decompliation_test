@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/frag_create_account_step_4_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/includeToolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/toolbar_create_account_step_4" />
+    <include android:id="@id/includeBody" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/includeToolbar" app:layout_constraintVertical_bias="0.0" layout="@layout/layout_create_account_step_4_body" />
+</androidx.constraintlayout.widget.ConstraintLayout>

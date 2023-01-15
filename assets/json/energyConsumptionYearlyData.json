@@ -1,0 +1,40 @@
+[
+  {
+    "vendorThingId": "JCH-88600585",
+    "dataAvailableFrom": 1515339813000,
+    "lastUpdatedOn": 1598400000000,
+    "data": {
+      "JAN": 100,
+      "FEB": 200,
+      "MAR": 300,
+      "APR": 600,
+      "MAY": 350,
+      "JUN": 400,
+      "JUL": 250,
+      "AUG": 56.00,
+      "SEP": 45,
+      "OCT": 40,
+      "NOV": 90,
+      "DEC": 100
+    }
+  },
+  {
+    "vendorThingId": "JCH-886005b9",
+    "dataAvailableFrom": 1515339813000,
+    "lastUpdatedOn": 1598400000000,
+    "data": {
+      "JAN": 100,
+      "FEB": 200,
+      "MAR": 300,
+      "APR": 600,
+      "MAY": 350,
+      "JUN": 400,
+      "JUL": 250,
+      "AUG": 56.00,
+      "SEP": 45,
+      "OCT": 40,
+      "NOV": 90,
+      "DEC": 100
+    }
+  }
+]

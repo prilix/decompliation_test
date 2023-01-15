@@ -1,0 +1,12 @@
+{
+  "result":{
+    "id":2,
+    "name":"RACWifi",
+    "versionCode":"INITIAL-VERSION",
+    "version":"1.0",
+    "updateMandatory":false,
+    "appPlatform":"ANDROID",
+    "storeLink":"https://www.jci-hitachi.com/"
+  },
+  "message":""
+}

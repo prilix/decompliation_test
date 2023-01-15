@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appLaunch_array_subTitle">
+        <item>@string/appLaunch_lbl_accessAnytimeAnywhereDesc</item>
+        <item>@string/appLaunch_lbl_intuitiveAndOptimizedDesc</item>
+        <item>@string/appLaunch_lbl_smartAndEnergyEfficientDesc</item>
+    </string-array>
+    <string-array name="appLaunch_array_title">
+        <item>@string/appLaunch_lbl_accessAnytimeAnywhere</item>
+        <item>@string/appLaunch_lbl_intuitiveAndOptimized</item>
+        <item>@string/appLaunch_lbl_smartAndEnergyEfficient</item>
+    </string-array>
+    <string-array name="billing_structure_array">
+        <item>@string/energyComsumption_lbl_simpleRate</item>
+        <item>@string/energyConsumption_lbl_peakRateTime</item>
+        <item>@string/energyConsumption_lbl_peakRateSeason</item>
+        <item>@string/energyConsumption_lbl_progressiveRate</item>
+    </string-array>
+    <string-array name="idu_array_fan">
+        <item>@string/common_lbl_auto</item>
+        <item>@string/iduFan_lbl_five</item>
+        <item>@string/iduFan_lbl_four</item>
+        <item>@string/iduFan_lbl_three</item>
+        <item>@string/iduFan_lbl_two</item>
+        <item>@string/iduFan_lbl_one</item>
+    </string-array>
+    <string-array name="months_array">
+        <item>@string/common_lbl_january</item>
+        <item>@string/common_lbl_february</item>
+        <item>@string/common_lbl_march</item>
+        <item>@string/common_lbl_april</item>
+        <item>@string/common_lbl_may</item>
+        <item>@string/common_lbl_june</item>
+        <item>@string/common_lbl_july</item>
+        <item>@string/common_lbl_august</item>
+        <item>@string/common_lbl_september</item>
+        <item>@string/common_lbl_october</item>
+        <item>@string/common_lbl_november</item>
+        <item>@string/common_lbl_december</item>
+    </string-array>
+    <string-array name="password_strength_suggessions">
+        <item>@string/FBM_001</item>
+        <item>@string/FBM_002</item>
+        <item>@string/FBM_003</item>
+        <item>@string/FBM_004</item>
+        <item>@string/FBM_005</item>
+        <item>@string/FBM_006</item>
+        <item>@string/FBM_007</item>
+        <item>@string/FBM_008</item>
+        <item>@string/FBM_009</item>
+        <item>@string/FBM_010</item>
+        <item>@string/FMB_011</item>
+        <item>@string/FBM_012</item>
+        <item>@string/FBM_013</item>
+        <item>@string/FBM_014</item>
+        <item>@string/FBM_015</item>
+        <item>@string/FBM_016</item>
+        <item>@string/FBM_017</item>
+        <item>@string/FBM_018</item>
+        <item>@string/FBM_019</item>
+        <item>@string/FBM_020</item>
+        <item>@string/FBM_021</item>
+        <item>@string/FBM_022</item>
+        <item>@string/FBM_023</item>
+        <item>@string/FBM_024</item>
+        <item>@string/FBM_025</item>
+        <item>@string/FBM_026</item>
+    </string-array>
+    <string-array name="steps_1_to_3">
+        <item>@string/common_lbl_step1of3</item>
+        <item>@string/common_lbl_step2of3</item>
+        <item>@string/common_lbl_step3of3</item>
+    </string-array>
+    <string-array name="user_preference_questions_array">
+        <item>@string/userPref_lbl_areYouAtHomeDuringWeekdays</item>
+        <item>@string/userPref_lbl_areYouAtHomeDuringWeekends</item>
+        <item>@string/userPref_lbl_areYouSensitiveToCold</item>
+    </string-array>
+    <string-array name="week_arry">
+        <item>@string/common_lbl_Monday</item>
+        <item>@string/common_lbl_Tuesday</item>
+        <item>@string/common_lbl_Wednesday</item>
+        <item>@string/common_lbl_Thursday</item>
+        <item>@string/common_lbl_Friday</item>
+        <item>@string/common_lbl_Saturday</item>
+        <item>@string/common_lbl_Sunday</item>
+    </string-array>
+</resources>
